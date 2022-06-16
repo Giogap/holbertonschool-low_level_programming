@@ -1,4 +1,4 @@
 #!/bin/bash
-#preprocessor
+#preprocessor 0
 
-gcc -E 
+
