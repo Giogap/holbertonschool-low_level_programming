@@ -6,6 +6,7 @@
  *is greater than 5
  *is 0
  *is less than 6
+ *Return: Always 0 (Success)
 */
 int main(void)
 {
