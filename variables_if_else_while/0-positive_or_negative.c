@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main block
+ * main -  main block
  * print the number
  * positive, zero, negative
  * Return: 0
