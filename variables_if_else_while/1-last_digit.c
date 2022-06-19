@@ -4,9 +4,8 @@
 /**
  *main - the number stored in the variable
  *is greater than 5
- *is 0
- *is less than 6  
-**/
+ *is 0  
+*/
 int main(void)
 {
 	int n;
