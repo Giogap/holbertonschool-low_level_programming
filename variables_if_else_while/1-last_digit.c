@@ -3,10 +3,10 @@
 #include <time.h>
 /**
  *main - the number stored in the variable
- *is greater than 5: the string and is greater than 5
- *is 0: the string and is 0
- *is less than 6 and not 0: the string and is less than 6 and not 0  
- * */
+ *is greater than 5
+ *is 0
+ *is less than 6  
+ **/
 int main(void)
 {
 	int n;
