@@ -10,12 +10,12 @@
 int main(void)
 {
 	int n;
-	char [] = "Last digit of";	
+	char s[] = "Last digit of";	
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	
+	printf("%s %d is %d and is ", last, n, n % 10);	
 
 	return (0);
 }
