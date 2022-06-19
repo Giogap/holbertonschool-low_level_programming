@@ -6,7 +6,7 @@
  *is greater than 5
  *is 0
  *is less than 6  
- **/
+**/
 int main(void)
 {
 	int n;
