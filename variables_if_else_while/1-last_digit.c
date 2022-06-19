@@ -15,7 +15,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	printf("%s %d is %d and is ", last, n, n % 10);	
+	printf("%s %d is %d and is ", s, n, n % 10);	
 
 	return (0);
 }
