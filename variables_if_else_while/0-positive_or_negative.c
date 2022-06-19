@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main block
+ * print the number
+ * positive, zero, negative
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
