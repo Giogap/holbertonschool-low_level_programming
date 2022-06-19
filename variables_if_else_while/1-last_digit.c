@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ *main - the number stored in the variable
+ *is greater than 5: the string and is greater than 5
+ *is 0: the string and is 0
+ *is less than 6 and not 0: the string and is less than 6 and not 0  
+ * */
 int main(void)
 {
 	int n;
