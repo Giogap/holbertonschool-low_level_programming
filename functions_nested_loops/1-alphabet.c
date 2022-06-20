@@ -13,7 +13,7 @@ char l;
 
 		_putchar(l);
 
-	putchar('\n');
+	_putchar('\n');
 
 	print_alphabet();
     	return (0);
