@@ -1,23 +1,23 @@
 #include "main.h"
+
 /**
- * main -  check the code
+ * main - check code
  *
  *
- * Return: 0
+ * Return: always 0
  */
 
 int main(void)
 {
-	int n = 0;
-	char l;
-	char s[] = "_putchar \n";
+	int i = 0;
+	char c;
+	char s[] = "Holberton\n";
 
-	while (n <= 8)
+	while (i <= 9)
 	{
-		l = s[n];
-		_putchar(l);
-		n++;
+		c = s[i];
+		_putchar(c);
+		i++;
 	}
-
 	return (0);
 }
