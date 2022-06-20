@@ -1,17 +1,18 @@
 #include "main.h"
 /**
- * _islower  - entry point
+ * _islower - checks 
  *
- * Description: Prints the alphabet
+ * Description: character 
  *
- * Return: void
+ * Return: 0 or 1
  */
 
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	
 		return (1);
+
 	else
+
 		return (0);
 }
