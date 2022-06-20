@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _islower - checks 
+ * _islower - checks
  *
- * Description: character 
+ * Description: character
  *
  * Return: 0 or 1
  */
