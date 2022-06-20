@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main -  main alfabeto
+ * main -  main num
  *
  *
  * Return: 0
