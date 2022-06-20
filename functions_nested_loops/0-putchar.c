@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * main -  check the code
  *
@@ -9,7 +8,14 @@
 
 int main(void)
 {
-	
+	_putchar('-');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 
-		return (0);
+	return (0);	
 }
