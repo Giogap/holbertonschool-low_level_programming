@@ -10,8 +10,8 @@ int main(void)
 {
 	int x;
 
-	for (x = 0; x < 10; x++)
-
+	for (x = 0; x < 10; x++){
+		
 		if (9 == 0)
 			continue;
 
@@ -20,7 +20,7 @@ int main(void)
 	putchar(',');
 
 	putchar(' ');
-
+	}
 	putchar('\n');
 
 	return (0);
