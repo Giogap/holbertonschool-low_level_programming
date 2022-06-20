@@ -5,7 +5,7 @@
  *
  * @n: absolute
  *
- * Return: 0 or 1
+ * Return: n
  */
 int _abs(int n)
 {
@@ -13,6 +13,9 @@ int _abs(int n)
 	{
 		n = n * -1;
 	}
-	else
-		return (n);
+	if (n >= 0)
+	{
+		n = n;
+	}
+	return (n);
 }
