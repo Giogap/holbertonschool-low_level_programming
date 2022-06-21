@@ -4,6 +4,8 @@
  *
  * @x - n1
  * @y - n2
+ * 
+ * Return: x + y 
  */
 
 int add(int x, int y)
