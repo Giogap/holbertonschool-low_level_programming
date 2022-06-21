@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_to_98 - nat 
+ * print_to_98 - nat
  *
  * @x: num int
  */
