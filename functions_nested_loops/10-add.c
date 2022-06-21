@@ -2,7 +2,8 @@
 /**
  * add - check the code
  *
- * Return: x + y
+ * @x - n1
+ * @y - n2
  */
 
 int add(int x, int y)
