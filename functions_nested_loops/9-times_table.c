@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * main - check the code
+ * times_table - check the code
  *
- * Return: Always 0.
+ * Return: table
  */
 
 void times_table(void)
@@ -35,7 +35,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-		}		
+		}
 		_putchar('\n');
 	}
 }
