@@ -1,35 +1,35 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_to_98 - n = 98
- * Description:  Modify value of n to alter num
+ * print_to_98 - nat 
  *
- * @x: First value 98
- * Return: n/a
+ * @x: num int
  */
 void print_to_98(int x)
 {
-	int i; 
-	int n;
-	int y;
-
-	n = 98;  
-
-	if (x <= n)
+	if (x > 98)
 	{
-		for (i = x; i <= n; i++)
+		while (x >= 98)
 		{
-			y == 0 ? y = 1 : printf(", ");
-			printf("%d", i);
+			printf("%d", x);
+			if (x != 98)
+			{
+				printf(", ");
+			}
+			x--;
 		}
 	}
 	else
 	{
-		for (i = x; i >= n; i--)
+		while (x <= 98)
 		{
-			y == 0 ? y = 1 : printf(", ");
-			printf("%d", i);
+			printf("%d", x);
+			if (x != 98)
+			{
+				printf(", ");
+			}
+			x++;
 		}
 	}
-	putchar('\n');
+	printf("\n");
 }
