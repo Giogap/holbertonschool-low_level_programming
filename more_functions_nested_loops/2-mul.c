@@ -3,9 +3,11 @@
 /**
  * _isdigit - check the code.
  *
- * @c: int
+ * @a: int
+ * @b: int
+ * @x: result int
  *
- * Return: 1 or 0
+ * Return: x
  */
 
 int mul(int a, int b)
