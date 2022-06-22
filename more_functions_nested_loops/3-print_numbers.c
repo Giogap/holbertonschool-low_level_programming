@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
-*print_numbers: prin 0 - 9
+* print_numbers: prin 0 - 9
+*
+* Description: numbers 
 *
 * Return: i
 */
