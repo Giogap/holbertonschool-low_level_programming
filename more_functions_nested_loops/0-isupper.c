@@ -8,9 +8,9 @@
  * Return: 1 or 0
  */
 
-int _isupper(int l)
+int _isupper(int c)
 {
-	if ((l >= 'A') && (l <= 'Z'))
+	if ((c >= 'A') && (c <= 'Z'))
 		return (1);
 	else
 		return (0);
