@@ -1,11 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * print_most_numbers - no print 2 - 4
 *
 * Description: numbers 0 - 9
 */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
