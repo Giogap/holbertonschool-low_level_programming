@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isupper - check the code.
+ * _isdigit - check the code.
  *
  * @c: int
  *
