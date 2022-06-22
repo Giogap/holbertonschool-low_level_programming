@@ -5,7 +5,6 @@
  *
  * @a: int
  * @b: int
- * @x: result int
  *
  * Return: x
  */
