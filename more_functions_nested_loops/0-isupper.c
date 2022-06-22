@@ -3,14 +3,14 @@
 /**
  * _isupper - check the code.
  *
- * @n: int
+ * @l: int
  *
  * Return: 1 or 0
  */
 
-int _isupper(int c)
+int _isupper(int l)
 {
-	if ((c >= 'A') && (c <= 'Z'))
+	if ((l >= 'A') && (l <= 'Z'))
 		return (1);
 	else
 		return (0);
