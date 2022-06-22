@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isdigit - check the code.
+ * mul - check the code.
  *
  * @a: int
  * @b: int
