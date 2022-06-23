@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_square - print #
+ * print_square - print 1-100
  *
- * @size: print # size
  *
- * Description: print #
+ *
+ * Description: fizzbuzz
  */
 
-int main (void)
+int main(void)
 {
 	int i;
 
