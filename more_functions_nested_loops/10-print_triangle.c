@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_triangle - check the code
  *
- * Return: Always 0.
+ *@size: # ## ###
+ *
+ * 
  */
 
 void print_triangle(int size)
