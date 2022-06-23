@@ -4,9 +4,9 @@
 /**
  * print_square - print 1-100
  *
- *
- *
  * Description: fizzbuzz
+ *
+ * Return: 0
  */
 
 int main(void)
