@@ -5,7 +5,7 @@
  *
  *@size: # ## ###
  *
- * 
+ *
  */
 
 void print_triangle(int size)
@@ -14,24 +14,24 @@ void print_triangle(int size)
 	int b;
 	int c;
 
-	a = 0;
+	c = 0;
 	b = size - 1;
-	while (a < size)
+	while (c < size)
 	{
 		b = size - 1 - c;
-		c = a + 1;
+		a = c + 1;
 		while (b > 0)
 		{
 			_putchar(' ');
 			b--;
 		}
-		while (c > 0)
+		while (a > 0)
 		{
 			_putchar('#');
-			c--;
+			a--;
 		}
 		_putchar('\n');
-		a++;
+		c++;
 	}
 
 	if (size <= 0)
