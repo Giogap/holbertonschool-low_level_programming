@@ -3,6 +3,8 @@
 /**
 * print_diagonal - check code
 *
+* @n: num
+*
 * Description: print ///
 */
 
@@ -16,10 +18,10 @@ void print_diagonal(int n)
 	while (n > 0)
 	{
 		b = a;
-		while (a > 0)
+		while (b > 0)
 		{
 			_putchar(' ');
-			i--;
+			b--;
 		}
 		_putchar('\\');
 		_putchar('\n');
@@ -27,7 +29,7 @@ void print_diagonal(int n)
 		a++;
 		b--;
 	}
-	if (c < 1)
+	if (a < 1)
 	{
 		_putchar('\n');
 	}
