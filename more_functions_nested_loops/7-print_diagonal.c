@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
-* print_diagonal - check code
-*
-* @n: num
-*
-* Description: print ///
-*/
-
+ * print_diagonal - //print
+ *
+ * @n: number of /////
+ *
+ * Description: print end /
+ */
 void print_diagonal(int n)
 {
 	int a;
@@ -25,12 +24,9 @@ void print_diagonal(int n)
 		}
 		_putchar('\\');
 		_putchar('\n');
-
 		a++;
-		b--;
+		n--;
 	}
 	if (a < 1)
-	{
 		_putchar('\n');
-	}
 }
