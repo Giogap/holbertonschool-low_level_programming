@@ -2,8 +2,8 @@
 /**
  * print_square - print #
  *
- * @size: print # size 
- * 
+ * @size: print # size
+ *
  * Description: print #
  */
 void print_square(int size)
