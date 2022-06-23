@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_square - print 1-100
+ * main - print 1-100
  *
  * Description: fizzbuzz
  *
