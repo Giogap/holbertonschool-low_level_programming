@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * swap_int - Check
  *
@@ -10,6 +9,7 @@
 void swap_int(int *a, int *b)
 {
 	int vtem;
+
 	vtem = *a;
 	*a = *b;
 	*b = vtem;
