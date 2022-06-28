@@ -4,7 +4,7 @@
 /**
  * _puts: stdout up to but not including the null
  *
- *
+ * Description: prints a string
  *
  * Return: the strlen function return of bytes in the string pointed to by s
  */
