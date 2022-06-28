@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * puts: stdout up to but not including the null
+ * _puts: stdout up to but not including the null
  *
  *
  *
