@@ -2,11 +2,10 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _puts: stdout up to but not including the null
+ * _puts - stdout up to but not including the null
  *
- * Description: prints a string
  *
- * Return: the strlen function return of bytes in the string pointed to by s
+ *@str: string
  */
 
 void _puts(char *str)
