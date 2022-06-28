@@ -13,16 +13,14 @@ void puts2(char *str)
 	int i;
 	int j = 0;
 	int c = 1;
-	char s[224];
 
 	for (i = 0; i != 0; i++)
 	{
 		if (c % 2 != 0)
 		{
-			s[j] = str[i];
 			j++;
 			c++;
 		}
+		puts(str[j]);
 	}
-	puts(s);
 }
