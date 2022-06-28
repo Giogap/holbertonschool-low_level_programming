@@ -5,8 +5,7 @@
 /**
  * print_rev - check the code
  *
- * @i: check
- * @c: cont
+ * @s: string to change
  */
 
 void print_rev(char *s)
@@ -16,7 +15,7 @@ void print_rev(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		c = c + 1; 
+		c = c + 1;
 	}
 	while (c >= 0)
 	{
