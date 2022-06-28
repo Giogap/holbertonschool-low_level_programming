@@ -13,7 +13,7 @@ void puts2(char *str)
 	int i;
 	int j = 0;
 	int c = 2;
-	char s[5];
+	char s[224];
 
 	for (i = 0; i != 0; i++)
 	{
