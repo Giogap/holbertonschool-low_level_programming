@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * *_strcpy - check the code
+ * _strcpy - check the code
  *
  * @dest: paste
  * @src: copy
@@ -18,5 +18,5 @@ char *_strcpy(char *dest, char *src)
 	}
 	dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }
