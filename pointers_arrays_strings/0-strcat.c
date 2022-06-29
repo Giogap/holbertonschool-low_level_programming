@@ -23,5 +23,5 @@ char *_strcat(char *dest, char *src)
 			i = i + 1;
 			j = j + 1;
 	}
-	return dest;
+	return (dest);
 }
