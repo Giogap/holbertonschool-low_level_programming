@@ -1,36 +1,34 @@
 #include "main.h"
 
 /**
- * puts2 - check the code
+ * puts_half - check the code
  *
- * @str: string to change
+ * @str: string midle
  */
 
 void puts_half(char *str)
 {
 	int i;
-	int j;
-	int c = 0;
+	int j = 0;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		c = c + 1;		
+		j = i;
 	}
-	j = c / 2;
 
 	if (j % 2 == 0)
 	{
-		while (str[j] != '\0')
-		{
-			_putchar(str[j]);
-		}
+		i = j / 2;
 	}
 	else
-		c = c - 1;
-		j = c / 2;
-
-		while (str[j] != '\0')
-		{
-			_putchar(str[j]);
-		}
+	{
+		j = i + 1;
+		i = j / 2;
+	}
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
