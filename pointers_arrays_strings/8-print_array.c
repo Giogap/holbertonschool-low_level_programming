@@ -2,17 +2,26 @@
 #include <stdio.h>
 
 /**
- * puts2 - check the code
+ * print_array - check the code
  *
- * @str: string to change
+ * @a: array
+ * @n: num date array
+ *
  */
 
 void print_array(int *a, int n)
 {
 	int i;
 
-	for (i = 0; a[i] < n; i++)
+	for (i = 0; i <= n; i++)
 	{
-		printf("%d, ", a[i]);
+		if (i != n)
+		{
+			printf("%d, ", a[i]);
+		}
+		else
+		{
+			printf("%d", a[i]);
+		}
 	}
 }
