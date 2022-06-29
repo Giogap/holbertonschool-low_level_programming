@@ -3,9 +3,9 @@
 
 /**
  * _strcpy - check the code
- *
  * @dest: paste
  * @src: copy
+ * Description: copy src to dest
  */
 
 char *_strcpy(char *dest, char *src)
