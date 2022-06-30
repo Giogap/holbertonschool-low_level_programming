@@ -4,7 +4,7 @@
  * _strcmp - check the code
  * @s1: compare with s2
  * @s2: compare with s1
- * 
+ *
  * Description: compare
  * Return: s1 - s2
  */
