@@ -20,7 +20,7 @@ void reverse_array(int *a, int n)
 		j = j + 1;
 	}
 
-	i = j;
+	i = j - 1;
 	while (i <= n && i >= 0)
 	{
 		return (a[i]);
