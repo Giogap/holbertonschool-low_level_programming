@@ -37,6 +37,8 @@ char *string_toupper(char *);
 
 char *cap_string(char *);
 
+int main(void)
+
 #endif
 
 
