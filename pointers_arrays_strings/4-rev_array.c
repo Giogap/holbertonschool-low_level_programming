@@ -23,7 +23,7 @@ void reverse_array(int *a, int n)
 	i = j - 1;
 	while (i <= n && i >= 0)
 	{
-		return (a[i]);
+		return (a);
 		i = i - 1;
 	}
 }
