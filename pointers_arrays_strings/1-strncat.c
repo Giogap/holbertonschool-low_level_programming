@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _strcat - check the code
+ * _strncat - check the code
  * @dest: string one
  * @src: add string to string one
+ * @n: num dat
  * Description: add src to dest
  * Return: dest
  */
