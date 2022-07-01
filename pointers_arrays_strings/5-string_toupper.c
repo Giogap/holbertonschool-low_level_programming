@@ -6,6 +6,8 @@
  *
  * @m: array
  * Description: min to may
+ *
+ * Return: char
  */
 
 char *string_toupper(char *m)
@@ -20,4 +22,5 @@ char *string_toupper(char *m)
 		}
 		i++;
 	}
+	return (m);
 }
