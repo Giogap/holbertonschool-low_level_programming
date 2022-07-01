@@ -2,10 +2,23 @@
 #include <stdio.h>
 
 /**
- * leet - check the code
+ * _memset - check the code
  *
- * @c: array
+ * @s: array
+ * @b: const
+ * @n: # dat
  * Description: change for #s
  *
- * Return: char
+ * Return: s
  */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i = 0;
+
+	while (i < n)
+	{
+		s[i] = b;
+	}
+	return (s);
+}
