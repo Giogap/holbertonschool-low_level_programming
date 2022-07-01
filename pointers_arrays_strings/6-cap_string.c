@@ -7,21 +7,27 @@
  * @m: array
  * Description: min to may
  *
- * Return: char
+ * Return: char 
  */
 
 char *cap_string(char *m)
 {
 	int i = 0;
+	int j = 1;
+	char *n = " \t\n;,.!?\"(){}\0";
 
 	while (m[i] != '\0')
-	{
-		if (m[i] >= 97 && m[i] <= 122 && m[i + 1] == 32)
+	{		
+		if (j = 1 && m[i] >= 97 && m[i] <= 122)
+		{	
+			m[i] = m[i] - 32;
+			j++;
+		}
+		for (i = 0; n[i]; i++)
 		{
-		
-			m[i + 2] = m[i + 2] - 32;
+			if (m[i] == n[i])
+				j--;;
 		}
 		i++;
 	}
-	return (m);
 }
