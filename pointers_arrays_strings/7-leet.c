@@ -19,7 +19,7 @@ char *leet(char *c)
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		for (j = 0; v[j] != '\0'; j++)
+		for (j = 0; j < 5; j++)
 		{
 			if (c[i] == v[j] || c[i] == v[j] - 32)
 			{
