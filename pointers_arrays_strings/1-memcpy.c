@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * _memset - check the code
+ * _memcpy - check the code
  *
- * @s: array
- * @b: const
+ * @dest: copy of
+ * @src: copy to
  * @n: # dat
- * Description: change for #s
+ * Description: copy to dest of src
  *
- * Return: s
+ * Return: dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
