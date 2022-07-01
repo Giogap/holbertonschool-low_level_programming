@@ -39,6 +39,8 @@ char *cap_string(char *);
 
 int main(void);
 
+char *leet(char *);
+
 #endif
 
 
