@@ -7,7 +7,7 @@
  * @m: array
  * Description: min to may
  *
- * Return: char 
+ * Return: char
  */
 
 char *cap_string(char *m)
