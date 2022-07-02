@@ -3,7 +3,7 @@
 /**
  * print_chessboard - check code
  * @a: matriz
- * @8: tamaño
+ *
  * Description: chess
  */
 
