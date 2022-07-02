@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strpbrk - check code
- * @s: cadena 1
- * @accept: cadena 2
+ * _strstr - check code
+ * @haystack: dtring
+ * @needle: substring
  * Return: 0
  */
 
