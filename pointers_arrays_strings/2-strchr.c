@@ -14,18 +14,17 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
-
-	for (i = 0; s[i]; i++)
+	unsigned int i = 0;
+	
+	while (s[i] != '\0')
 	{
-		if (s == NULL)
-		{
-			return (NULL);
-		}
-		else if (s[i] == c)
-		{
+		if (s[i] == c)
 			return (s);
-		}		
+		else if (s[i + 1]== c)
+		{
+			return (s + 1);
+		}
+		s++;
 	}
-	return (0);
+	return (s + 1);
 }
