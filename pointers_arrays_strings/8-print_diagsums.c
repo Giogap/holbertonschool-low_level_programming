@@ -2,35 +2,29 @@
 #include <stdio.h>
 
 /**
- * print - check code
- * @s: cadena 1
- * @accept: cadena 2
- * Return: 0
+ * print_diagsums - check code
+ * @a: matrix
+ * @size: tamaño
+ * 
  */
 
 void print_diagsums(int *a, int size)
 {
-	int i;
-	int j;
+	int i = 0;
+	int j = size - 1;
 	int acum1 = 0;
 	int acum2 = 0;
 
-	for (i = 0; i < size; i++);
+	while (i <= (size * size))
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i = j)
-			{
-				acum1 = acum1 + a[i][j];
-			}	
-		}
+		acum1 = acum1 + a[i];
+		i = i + size + 1;
 	}
-	printf("%d, ", acum1);
 
-	for (j = 0; j < size; j++)
+	while (j < (size * size - 1))
 	{
-		i = size - 1;
-		acum2 = acum2 + a[i][j];
+		acum2 = acum2 +  a[j];
+		j = j + size - 1;
 	}
-	printf("%d, ", acum2);
+	printf("%d, %d\n", acum1, acum2);
 }
