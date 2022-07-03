@@ -5,7 +5,7 @@
  * print_diagsums - check code
  * @a: matrix
  * @size: tamaño
- * 
+ *
  */
 
 void print_diagsums(int *a, int size)
