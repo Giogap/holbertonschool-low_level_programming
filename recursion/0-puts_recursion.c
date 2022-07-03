@@ -3,12 +3,12 @@
 /**
  * _puts_recursion - check code
  * @s: strn
- * 
- * Return: s+1
+ *
+ * Return: s + 1
  */
 
 void _puts_recursion(char *s)
-{	
+{
 	if (*s == '\0')
 	{
 		_putchar('\n');
