@@ -2,8 +2,9 @@
 /**
  * _strlen_recursion - check code
  *
- * @s: string 
+ * @s: string
  *
+ * Description: size strng
  */
 
 int _strlen_recursion(char *s)
