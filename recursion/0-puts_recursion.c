@@ -1,8 +1,20 @@
 #include "main.h"
 
 /**
- * _strpbrk - check code
- * @s: cadena 1
- * @accept: cadena 2
- * Return: 0
+ * _puts_recursion - check code
+ * @s: strn
+ * 
+ * Return: s+1
  */
+
+void _puts_recursion(char *s)
+{
+	if (*s == 0)
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
+
+}
