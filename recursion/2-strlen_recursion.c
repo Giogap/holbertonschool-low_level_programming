@@ -3,7 +3,8 @@
  * _strlen_recursion - check code
  *
  * @s: string
- * Description: strng
+ *
+ * Return: tamaño cadena
  */
 
 int _strlen_recursion(char *s)
