@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * _strlen_recursion - check code
+ * _pow_recursion - check code
  *
- * @s: string
+ * @x: value
+ * @y: power
  *
- * Return: tamaño cadena
+ * Return: x, y
  */
 
 int _pow_recursion(int x, int y)
