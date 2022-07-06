@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - prints name
+ * main - check code
  * @argc:  counter
  * @argv:  array
  *
- * Return: 0
+ * Return: 0 - 1 Error
  */
 
 int main(int argc, char *argv[])
@@ -21,7 +22,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{		
-		if (atoi(argv[i] == 0 && *argv[i] != '0'))
+		if (atoi(argv[i]) == 0 && *argv[i] != '0')
 		{
 			printf("Error\n");
 			return (1);
