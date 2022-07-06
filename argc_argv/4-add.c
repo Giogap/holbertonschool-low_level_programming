@@ -12,8 +12,10 @@
 
 int main(int argc, char *argv[])
 {
-	long aux = 0, suma = 0;
-	int i, j = 0;
+	int aux = 0; 
+	int suma = 0;
+	int i; 
+	int j = 0;
 
 	for (i = 1; i < argc; i++)
 	{
@@ -29,6 +31,6 @@ int main(int argc, char *argv[])
 		aux = atoi(argv[i]);
 		suma = aux + suma;
 	}
-	printf("%ld\n", suma);
+	printf("%d\n", suma);
 	return (0);
 }
