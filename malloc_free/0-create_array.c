@@ -5,7 +5,7 @@
  * @size: size array
  * @c: char initialized
  * Return: s or null
- **/
+ */
 char *create_array(unsigned int size, char c)
 {
 	char *s;
@@ -22,7 +22,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	
+
 	for (i = 0; i < size; i++)
 	{
 		s[i] = c;
