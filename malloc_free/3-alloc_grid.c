@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height)
 {
 	int i;
 	int j;
-	char **matz;
+	int **matz;
 
 	if (width <= 0 || height <= 0)
 	{
