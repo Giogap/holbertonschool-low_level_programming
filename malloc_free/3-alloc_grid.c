@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 /**
- * **alloc_grid - check code
+ * alloc_grid - check code
  * @width: int
  * @height: int2
  * Return: mtrz or null
@@ -20,12 +19,6 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-
-	/*if (matz == NULL)
-	{
-		free(matz);
-		return (NULL);
-	}*/
 
 	matz = malloc(sizeof(int) * height);
 
