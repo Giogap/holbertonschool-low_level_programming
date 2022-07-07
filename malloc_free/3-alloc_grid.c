@@ -28,7 +28,8 @@ int **alloc_grid(int width, int height)
 
 		if (matz == NULL)
 		{
-		return (NULL);
+			free(matz);
+			return (NULL);
 		}
 
 		for (j = 0; j < width; j++)
