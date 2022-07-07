@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
+
 /**
  * _strdup - check code
  * @str: array
@@ -10,7 +12,6 @@
 char *_strdup(char *str)
 {
 	int i;
-	int acum = 0;
 	char *str2;
 
 	if(str == 0)
@@ -18,12 +19,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		acum = acum + i;
-	}
-
-	str2 = malloc(sizeof(*str) * acum);
+	str2 = malloc(sizeof(*str) * strlen(str) + 1);
 
 	if (str2 == 0)
 	{
