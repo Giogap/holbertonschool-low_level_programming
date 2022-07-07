@@ -14,39 +14,44 @@ int **alloc_grid(int width, int height)
 	int i;
 	int j;
 	int k;
-	int **matz;
+	int l;
+	int **mtrz;
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
 
-	matz = malloc(sizeof(int) * height);
+	mtrz = malloc(sizeof(int *) * height);
 
-	if (matz == NULL)
+	if (mtrz == NULL)
 	{
+		free(mtrz);
 		return (NULL);
 	}
 
 	for (i = 0; i < height; i++)
 	{
-		matz[i] = malloc(sizeof(int) * width);
+		mtrz[i] = malloc(sizeof(int) * width);
 
-		if (matz[i] == NULL)
+		if (mtrz[i] == NULL)
 		{
-			for (k = 0; k < i; k++)
+			for (j = i; j >= 0; j--)
 			{
-				free(matz[k]);
+				free(mtrz[j]);
 			}
 
-			free(matz);
+			free(mtrz);
 			return (NULL);
-		
-			for (j = 0; j < width; j++)
-			{
-				matz[i][j] = 0;
-			}
 		}
 	}
-	return (matz);
+
+	for (k = 0; k < height; k++)
+	{
+		for (l = 0; l < width; l++)
+		{
+			mtrz[k][l] = 0;
+		}
+	}
+	return (mtrz);
 }
