@@ -13,6 +13,7 @@ int **alloc_grid(int width, int height)
 {
 	int i;
 	int j;
+	int k;
 	int **matz;
 
 	if (width <= 0 || height <= 0)
@@ -33,6 +34,11 @@ int **alloc_grid(int width, int height)
 
 		if (matz[i] == NULL)
 		{
+			for (k = 0; k < i; k++)
+			{
+				free(matz[k]);
+			}
+
 			free(matz);
 			return (NULL);
 		
