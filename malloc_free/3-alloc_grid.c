@@ -24,6 +24,7 @@ int **alloc_grid(int width, int height)
 
 	if (matz == NULL)
 	{
+		free(matz);
 		return (NULL);
 	}
 
@@ -33,6 +34,7 @@ int **alloc_grid(int width, int height)
 
 		if (matz == NULL)
 		{
+			free(matz);
 			return (NULL);
 		}
 
