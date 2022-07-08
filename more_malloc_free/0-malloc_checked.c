@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <limits.h>
 
-
-
-
-
-
+/**
+ * malloc_checked - check code
+ * @b: int
+ *
+ * Return: vec
+ */
 
 void *malloc_checked(unsigned int b)
 {
