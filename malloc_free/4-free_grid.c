@@ -5,7 +5,7 @@
  * free_grid - check code
  * @grid: **array
  * @height: int
- * 
+ *
  */
 
 void free_grid(int **grid, int height)
