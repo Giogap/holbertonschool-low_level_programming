@@ -11,9 +11,9 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *vec;
+	unsigned int *vec;
 
-	vec = malloc(b)
+	vec = malloc(b);
 
 	if (vec == NULL)
 	{
