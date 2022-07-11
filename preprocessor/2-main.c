@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - check the code
@@ -9,8 +8,6 @@
 
 int main(void)
 {
-	char *name;
-
 	printf("%s\n", __FILE__);
 	return (0);
 }
