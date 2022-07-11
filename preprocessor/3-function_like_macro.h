@@ -1,5 +1,6 @@
-#ifndef ABS
+#ifndef F_L_M
+#define F_L_M
 
 #define ABS(x) (x < 0) ? -(x) : (x)
 
-#endif /* ABS */
+#endif /* F_L_M */
