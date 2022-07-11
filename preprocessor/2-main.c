@@ -11,7 +11,6 @@ int main(void)
 {
 	char *name;
 
-	name = "2-main.c";
-	printf("%p\n", name);
+	printf("%s\n", __FILE__);
 	return (0);
 }
