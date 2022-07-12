@@ -2,11 +2,9 @@
 #include "dog.h"
 
 /**
-  * init_dog - check code
+  * print_dog - check code
   * @d: array info dog
-  * @name: name of dog
-  * @age: age of dog
-  * @owner: owner of dog
+  *
   */
 
 void print_dog(struct dog *d)
