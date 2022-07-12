@@ -4,6 +4,9 @@
 
 /**
  * struct dog - check code
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
  *
  * Description: data of dog
  */
