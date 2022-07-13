@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
-  * new_dog - check code
+  * free_dog - check code
   *
-  * @: info of dog
+  * @d: info of dog
   *
   * Description: delet info dog
   */
