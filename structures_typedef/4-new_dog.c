@@ -12,7 +12,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	int i;
-	int cont = 0;
+	int cont = 1;
 	char *cpname;
 	char *cpowner;
 
@@ -43,7 +43,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	cont = 0;
+	cont = 1;
 
 	for(i = 0; owner[i] != '\0'; i++)
 	{
