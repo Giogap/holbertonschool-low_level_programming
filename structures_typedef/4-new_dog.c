@@ -12,7 +12,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	int i;
-	int cont = 1;
+	int cont = 0;
 	char *cpname;
 	char *cpowner;
 
@@ -28,7 +28,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		cont = cont + 1;
 	}
 
-	cpname = malloc(cont);
+	cpname = malloc(cont + 1);
 
 	if (cpname != NULL)
 	{	
@@ -43,14 +43,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	cont = 1;
+	cont = 0;
 
 	for(i = 0; owner[i] != '\0'; i++)
 	{
 		cont = cont + 1;
 	}
 
-	cpowner = malloc(cont);
+	cpowner = malloc(cont + 1);
 
 	if (cpowner != NULL)
 	{	
