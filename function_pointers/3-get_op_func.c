@@ -1,4 +1,12 @@
 #include "3-calc.h"
+#include <stddef.h>
+#include <string.h>
+
+/**
+ * get_op_func - get op
+ * @s: op
+ * Return: pointer op
+ */
 
 int includes(char *string, char *substring)
 {
@@ -28,9 +36,11 @@ int (*get_op_func(char *s))(int, int)
 
 	while(ops[i].op != NULL)
 	{
-		if (includes(ops[i].op, s))
+		if (strcmp(ops[i].op, s) == 0)
+		{
 			return (ops[i].f);
-			i += 1;
+		}
+		i++;
 	}
 	return (NULL);
 }
