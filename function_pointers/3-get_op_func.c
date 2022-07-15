@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 
 int includes(char *string, char *substring)
 {
