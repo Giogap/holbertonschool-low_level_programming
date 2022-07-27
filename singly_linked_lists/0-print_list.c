@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
- *
+ * print_list - check code
+ * @h: pointer
+ * Return: acum
  */
 
 size_t print_list(const list_t *h)
