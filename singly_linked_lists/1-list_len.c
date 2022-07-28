@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * print_list - check code
+ * list_len - check code
  * @h: pointer
- * Description: returns the number of elements in a linked
+ * Description: returns the number of elements
  * Return: acum
  */
 
