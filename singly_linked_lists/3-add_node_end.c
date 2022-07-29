@@ -3,10 +3,11 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * add_node - check code
+ * add_node_end - check code
  * @head: first pointer
  * @str: streng new element
- * Return: h
+ * Description: add node in the end
+ * Return: ultimate
  */
 
 list_t *add_node_end(list_t **head, const char *str)
