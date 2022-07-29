@@ -3,9 +3,9 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * add_node - check code
+ * add_nodeint - check code
  * @head: first pointer
- * @str: streng new element
+ * @n: int new element
  * Return: new node
  */
 
@@ -19,11 +19,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 	}
 
-	if (nnode->n == NULL)
-	{
-		free(nnode);
-	}
-
+	nnode->n = n;
 	nnode->next = *head;
 	*head = nnode;
 	return (nnode);
