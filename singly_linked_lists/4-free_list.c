@@ -11,7 +11,10 @@
 
 void free_list(list_t *head)
 {
-	free(head->next);
-	free(head->str);
-	free(head);
+	if (head)
+	{
+		free(head->next);
+		free(head->str);
+		free(head);
+	}
 }
