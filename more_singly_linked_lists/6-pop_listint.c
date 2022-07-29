@@ -3,21 +3,25 @@
 #include <stdio.h>
 #include "lists.h"
 
-
+/**
+ * pop_listint - check code
+ * @head: pointer
+ * Retunt: n
+ */
 
 int pop_listint(listint_t **head)
 {
-	listint *tem;
+	listint_t *tem;
 	int n;
 
-	if (*head == NULL || head == NULL)
+	if (head == NULL || *head == NULL)
 	{
 		retern (0);
 	}
 
-	*tem = *head;
-	*head = *head->next;
+	tem = *head;
+	*head = tem->next;
 	n = tem->n;
 	free(tem);
-	return (n);i
+	return (n);
 }
