@@ -3,16 +3,17 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * add_node_end - check code
+ * add_nodeint_end - check code
  * @head: first pointer
- * @str: streng new element
+ * @n: n new element
  * Description: add node in the end
- * Return: ultimate
+ * Return: add to end
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *temp, *ptr;
+
 	temp = *head;
 
 	ptr = malloc(sizeof(listint_t));
@@ -29,7 +30,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = ptr;
 		return (ptr);
 	}
-
 	while (temp->next != NULL)
 	{
 		temp = temp->next;
