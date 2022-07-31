@@ -6,8 +6,8 @@
 /**
  * pop_listint - check code
  * @head: pointer
- * Description: deletes the head node
- * Retunt: n
+ *
+ * Return: n
  */
 
 int pop_listint(listint_t **head)
