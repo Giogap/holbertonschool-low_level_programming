@@ -6,6 +6,7 @@
 /**
  * pop_listint - check code
  * @head: pointer
+ * Description: deletes the head node
  * Retunt: n
  */
 
