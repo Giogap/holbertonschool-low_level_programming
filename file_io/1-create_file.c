@@ -7,7 +7,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, len = 0;
+	int fd, len = 0, lenwr;
 	char *buf;
 
 	if (filename == NULL)
@@ -42,6 +42,13 @@ int create_file(const char *filename, char *text_content)
 	fd = open("filename", O_CREAT | O_WRONLY | O_TRUNC);
 
 	if (fd == -1)
+	{
+		return (-1);
+	}
+
+	lenwr = write(fd, text_content, len);
+
+	if (lenwr == -1)
 	{
 		return (-1);
 	}
