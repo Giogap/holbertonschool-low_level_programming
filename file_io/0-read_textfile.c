@@ -3,9 +3,10 @@
 #include <stdlib.h>
 
 /**
-
-
-
+ * read_textfile - check code
+ * @filename: name of file
+ * @letters: text to read
+ * Return: lenwr
 */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -26,6 +27,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	buf = malloc(sizeof(char) * letters);
+
+	if (buf == NULL)
+	{
+		return (0);
+	}
 
 	lenrd = read(fd, buf, letters);
 	close(fd);
