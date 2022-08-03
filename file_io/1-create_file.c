@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include <fcntl.h>
+#include <sys/types.h>
 
 /**
  * create_file - check code
