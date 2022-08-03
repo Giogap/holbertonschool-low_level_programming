@@ -8,7 +8,7 @@
 
 /**
  * create_file - check code
- * @filname: name of file
+ * @filename: name of file
  * @text_content: string
  * Return: 1 or -1
  */
