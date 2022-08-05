@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * printint_len - check code
+ * dlistint_len - check code
  * @h: pointer
  * Return: acum
  */
