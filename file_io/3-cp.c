@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <unistd.h>
-#include "main.h"
+#include <fcntl.h>
+#include <stdio.h>
 
 /**
  * error97 - check code
