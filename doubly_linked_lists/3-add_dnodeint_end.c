@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * add_nodeint_end - check code
+ * add_dnodeint_end - check code
  * @head: first pointer
  * @n: n new element
  * Description: add node in the end
- * Return: add to end
+ * Return: ptr
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
