@@ -1,6 +1,12 @@
 #include "lists.h"
 #include <stdlib.h>
 
+/**
+ * delete_dnodeint_at_index - check code
+ * @head: pointer
+ * @index: node starts 0
+ * Return: 1 if it succeede, -1 if it failed
+ */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -9,7 +15,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	if (*head == NULL)
 		return (-1);
-	
+
 	for (tmp = *head, i = 0, prev = NULL; tmp && i < index; i++)
 	{
 		prev = tmp;
@@ -17,7 +23,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	if (tmp == NULL)
 		return (-1);
-	
+
 	next = tmp->next;
 	if (prev == NULL)
 	{
