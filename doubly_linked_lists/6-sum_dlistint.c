@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 
 
 int sum_dlistint(dlistint_t *head)
