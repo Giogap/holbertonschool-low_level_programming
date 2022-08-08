@@ -1,6 +1,13 @@
 #include "lists.h"
 #include <stdlib.h>
 
+/**
+ * insert_dnodeint_at_index - check code
+ * @h: pointer
+ * @idx: index newNode starting 0
+ * @n: date
+ * Return: pointer nnode or NULL or 0
+ */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
