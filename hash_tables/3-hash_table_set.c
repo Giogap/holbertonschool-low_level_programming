@@ -10,12 +10,24 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *nnode = NULL;
+	hash_node_t *nnode, *tmp;
 	unsigned int long index;
 
 	if (!ht || !key || !value)
 	{
 		return (0);
+	}
+	tmp = ht->array[index];
+
+	while (tmp != NULL)
+	{
+		if (strcmp(tmp->key, key) == 0)
+		{
+			free(tmp->value);
+			tmp->value = strdup(value);
+			return (1);
+		}
+		tmp = tmp->next;
 	}
 	index = key_index((unsigned char *)key, ht->size);
 	if (ht->array[index] != NULL && ht->array[index]->value == 0)
