@@ -2,19 +2,14 @@
 
 /**
  * key_index - check code
- *
- * @key: key
- * @size: size hash
- *
+ * @key: value key
+ * @size: size to the size hash table
  * Return: index
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	int index;
-	int value = hash_djb2(key);
+	unsigned long int idx = hash_djb2(key) % size;
 
-	index = value % size;
-
-	return (index);
+	return (idx);
 }
