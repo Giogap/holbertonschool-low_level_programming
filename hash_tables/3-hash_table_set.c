@@ -1,46 +1,48 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - check code
- * @ht: value hash table
- * @key: value key
- * @value: value
- * Return: 1 if it succeeded, 0 otherwise
+ * hash_table_set - Set a value in the hash table.
+ * @ht: Hash table.
+ * @key: Key to be indexed.
+ * @value: Value to set in the hash table.
+ *
+ * Return: 1 if works, 0 if doesn't.
  */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-		unsigned long int index;
-	hash_node_t *node;
-	hash_node_t *tmp;
+	unsigned long int index;
+	hash_node_t *item, *newNode;
 
-	if (ht == NULL || key == NULL || value == NULL)
+	if (!ht || !key || !value)
 		return (0);
-
-	index = key_index((unsigned char *)key, ht->size);
-
-	tmp = ht->array[index];
-
-	while (tmp != NULL)
+	index = key_index((const unsigned char *)key, ht->size);
+	item = create_item(key, value);
+	if (ht->array[index] == NULL)
+		ht->array[index] = item;
+	else
 	{
-		if (strcmp(tmp->key, key) == 0)
+		newNode = ht->array[index];
+		if (strcmp(newNode->key, key) == 0)
 		{
-			free(tmp->value);
-			tmp->value = strdup(value);
+			item->next = newNode->next;
+			ht->array[index] = item;
+			free_item(newNode);
 			return (1);
 		}
-		tmp = tmp->next;
+		while (newNode->next != NULL && strcmp(newNode->next->key, key) != 0)
+		{ newNode = newNode->next;
+		}
+		if (strcmp(newNode->key, key) == 0)
+		{
+			item->next = newNode->next->next;
+			free_item(newNode->next);
+			newNode->next = item;
+		}
+		else
+		{
+			item->next = ht->array[index];
+			ht->array[index] = item;
+		}
 	}
-
-	node = malloc(sizeof(hash_node_t));
-
-	if (node == NULL)
-		return (0);
-
-	node->key = strdup(key);
-	node->value = strdup(value);
-	node->next = ht->array[index];
-	ht->array[index] = node;
-
 	return (1);
 }
