@@ -29,8 +29,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		return (0);
 	}
-
-
+	nnode->key = strdup(key);
+	nnode->value = strdup(value);
+	nnode->next = ht->array[index];
 
 	return (1);
 }
