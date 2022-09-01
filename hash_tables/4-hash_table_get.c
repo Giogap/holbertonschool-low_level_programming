@@ -1,23 +1,28 @@
 #include "hash_tables.h"
 
+/**
+ *
+ *
+ *
+ */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	hash_node_t *hnode = NULL;
+	hash_node_t *nnode = NULL;
 	unsigned long int index;
 
-	if (!ht || !key || !key[0])
+	if (!ht || !key)
 		return (NULL);
 
 	index = key_index((unsigned char *)key, ht->size);
-	hnode = ht->array[index];
+	nnode = ht->array[index];
 
-	while (hnode != NULL)
+	while (nnode != NULL)
 	{
-		if (!strcmp(hnode->key, key))
-			return (hnode->value);
+		if (!strcmp(nnode->key, key))
+			return (nnode->value);
 
-		hnode = hnode->next;
+		nnode = nnode->next;
 	}
 
 	return (NULL);
