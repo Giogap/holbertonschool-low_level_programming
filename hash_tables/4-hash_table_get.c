@@ -1,10 +1,11 @@
 #include "hash_tables.h"
 
 /**
- *
- *
- *
- */
+* hash_table_get - check code
+* @ht: table
+* @key: key
+* Return: value o NULL if faile
+*/
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
